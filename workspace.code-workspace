@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "services/customers"
+		},
+		{
+			"path": "services/jobs"
+		}
+	],
+	"settings": {}
+}
