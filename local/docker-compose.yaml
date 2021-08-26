@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: sm_user
+      POSTGRES_PASSWORD: sm_password
+      POSTGRES_DB: service_manager
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 8080:8080
