@@ -1,7 +1,7 @@
 FROM golang:1.17 AS build
 WORKDIR /src/
-RUN go mod vendor
 COPY . .
+RUN go mod vendor
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app main.go
 
 FROM alpine:latest
