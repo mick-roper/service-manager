@@ -12,3 +12,13 @@ services:
     restart: always
     ports:
     - 8080:8080
+  customers:
+    build:
+      context: ../services/jobs
+    environment:
+      PORT: 45650
+  jobs:
+    build:
+      context: ../services/jobs
+    environment:
+      PORT: 45651
