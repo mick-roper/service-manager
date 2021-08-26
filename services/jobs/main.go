@@ -34,7 +34,7 @@ func main() {
 		ctx, cancelFunc := context.WithTimeout(context.Background(), time.Second*10)
 		defer cancelFunc()
 
-		if err := server.Shutdown(ctx); err != nil && err != http.ErrServerClosed {
+		if err := server.Shutdown(ctx); err != http.ErrServerClosed {
 			log.Println(err)
 		}
 
